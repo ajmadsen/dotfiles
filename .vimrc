@@ -111,6 +111,13 @@ set softtabstop=4
 set shiftwidth=4
 set expandtab
 
+" searching
+set ignorecase
+set smartcase
+set hlsearch
+nnoremap * /\<<C-R>=expand('<cword>')<CR>\><CR>
+nnoremap # ?\<<C-R>=expand('<cword>')<CR>\><CR>
+
 " filetype-specific options
 autocmd FileType ruby setlocal ts=2 sts=2 sw=2
 autocmd FileType makefile setlocal noet " make sure we use tabs
@@ -132,8 +139,10 @@ let g:UltiSnipsJumpBackwardTrigger = "<c-k>"
 let g:ycm_global_ycm_extra_conf = '~/.ycm_extra_conf.py'
 
 " key bindings
+let mapleader=','
 map <leader>f :NERDTreeToggle<CR>
 map <leader>tb :TagbarOpenAutoClose<CR>
 map <leader>gs :Gstatus<CR>
 map <leader>r :source $MYVIMRC<CR>
 map <leader>pi :source $MYVIMRC<CR>:PluginInstall<CR>
+map <leader>k :nohlsearch<CR>
