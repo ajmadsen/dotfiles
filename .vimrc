@@ -28,7 +28,6 @@ Plugin 'scrooloose/nerdtree'
 
 " git integration
 Plugin 'tpope/vim-fugitive'
-Plugin 'tpope/vim-git'
 
 " surround text
 Plugin 'tpope/vim-surround'
@@ -41,9 +40,6 @@ Plugin 'scrooloose/nerdcommenter'
 
 " tags!
 Plugin 'majutsushi/tagbar'
-
-" go support
-Plugin 'fatih/vim-go'
 
 " syntax hilighting
 Plugin 'scrooloose/syntastic'
@@ -66,6 +62,13 @@ Plugin 'rdnetto/YCM-Generator'
 
 " fast html
 Plugin 'rstacruz/sparkup', {'rtp': 'vim'}
+
+""" languages
+Plugin 'pangloss/vim-javascript'
+Plugin 'vim-ruby/vim-ruby'
+Plugin 'fatih/vim-go'
+Plugin 'tpope/vim-git'
+Plugin 'othree/html5.vim'
 
 " show trailing whitespace
 Plugin 'bronson/vim-trailing-whitespace'
@@ -104,6 +107,8 @@ set background=light
 " general options
 set encoding=utf-8
 set number " enable line numbers
+set colorcolumn=80
+set nowrap
 
 " tab settings
 set tabstop=4
