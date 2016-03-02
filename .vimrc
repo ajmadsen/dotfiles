@@ -146,3 +146,4 @@ map <leader>gs :Gstatus<CR>
 map <leader>r :source $MYVIMRC<CR>
 map <leader>pi :source $MYVIMRC<CR>:PluginInstall<CR>
 map <leader>k :nohlsearch<CR>
+map <leader>gi :GoImport 
