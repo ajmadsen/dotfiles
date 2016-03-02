@@ -103,7 +103,6 @@ set background=light
 
 " general options
 set encoding=utf-8
-set autoindent
 
 " tab settings
 set tabstop=4
@@ -143,7 +142,8 @@ let mapleader=','
 map <leader>f :NERDTreeToggle<CR>
 map <leader>tb :TagbarOpenAutoClose<CR>
 map <leader>gs :Gstatus<CR>
-map <leader>r :source $MYVIMRC<CR>
+map <leader>s :source $MYVIMRC<CR>
 map <leader>pi :source $MYVIMRC<CR>:PluginInstall<CR>
-map <leader>k :nohlsearch<CR>
 map <leader>gi :GoImport 
+map <leader>gr :GoRename 
+map <leader>gf :GoFmt<CR>:GoImports<CR>
