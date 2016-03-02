@@ -103,6 +103,7 @@ set background=light
 
 " general options
 set encoding=utf-8
+set number " enable line numbers
 
 " tab settings
 set tabstop=4
