@@ -69,6 +69,7 @@ Plugin 'vim-ruby/vim-ruby'
 Plugin 'fatih/vim-go'
 Plugin 'tpope/vim-git'
 Plugin 'othree/html5.vim'
+Plugin 'petRUShka/vim-opencl'
 
 " show trailing whitespace
 Plugin 'bronson/vim-trailing-whitespace'
