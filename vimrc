@@ -70,6 +70,7 @@ Plugin 'fatih/vim-go'
 Plugin 'tpope/vim-git'
 Plugin 'othree/html5.vim'
 Plugin 'petRUShka/vim-opencl'
+Plugin 'saltstack/salt-vim'
 
 " show trailing whitespace
 Plugin 'bronson/vim-trailing-whitespace'
@@ -125,8 +126,15 @@ nnoremap * /\<<C-R>=expand('<cword>')<CR>\><CR>
 nnoremap # ?\<<C-R>=expand('<cword>')<CR>\><CR>
 
 " filetype-specific options
+"autocmd!
 autocmd FileType ruby setlocal ts=2 sts=2 sw=2
+autocmd FileType yaml setlocal ts=2 sts=2 sw=2
+autocmd FileType json setlocal ts=2 sts=2 sw=2
 autocmd FileType makefile setlocal noet " make sure we use tabs
+"autocmd BufNewFile,BufRead *.sls set filetype=yaml
+
+autocmd FileType sls inoremap <buffer> <localleader>jt {%  %}<Esc>hhi
+autocmd FileType sls inoremap <buffer> <localleader>ji {{  }}<Esc>hhi
 
 " airline options
 let g:airline#extensions#tabline#enabled = 1 " nice tablines
@@ -154,3 +162,4 @@ map <leader>pi :source $MYVIMRC<CR>:PluginInstall<CR>
 map <leader>gi :GoImport 
 map <leader>gr :GoRename 
 map <leader>gf :GoFmt<CR>:GoImports<CR>
+map <leader>k :nohl<CR>
