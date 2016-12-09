@@ -42,7 +42,7 @@ Plugin 'scrooloose/nerdcommenter'
 Plugin 'majutsushi/tagbar'
 
 " syntax hilighting
-Plugin 'scrooloose/syntastic'
+Plugin 'vim-syntastic/syntastic'
 
 " tab completion
 "Plugin 'ervandew/supertab'
