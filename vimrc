@@ -152,6 +152,16 @@ let g:UltiSnipsJumpBackwardTrigger = "<c-k>"
 " extra ycm options
 let g:ycm_global_ycm_extra_conf = '~/.ycm_extra_conf.py'
 
+" syntastic configuration
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
+
 " allow modelines
 set modeline
 set modelines=5
@@ -167,3 +177,4 @@ map <leader>gi :GoImport
 map <leader>gr :GoRename 
 map <leader>gf :GoFmt<CR>:GoImports<CR>
 map <leader>k :nohl<CR>
+map <leader>e :lopen<CR>
