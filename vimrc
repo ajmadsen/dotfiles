@@ -178,3 +178,4 @@ map <leader>gr :GoRename
 map <leader>gf :GoFmt<CR>:GoImports<CR>
 map <leader>k :nohl<CR>
 map <leader>e :lopen<CR>
+map <leader>v :tabedit $MYVIMRC<CR>
