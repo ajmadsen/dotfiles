@@ -168,7 +168,7 @@ set modelines=5
 
 " key bindings
 let mapleader=','
-map <leader>f :NERDTreeToggle<CR>
+map <leader>f :NERDTreeFocus<CR>
 map <leader>tb :TagbarOpenAutoClose<CR>
 map <leader>gs :Gstatus<CR>
 map <leader>s :source $MYVIMRC<CR>
