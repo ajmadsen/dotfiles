@@ -133,8 +133,9 @@ autocmd FileType json setlocal ts=2 sts=2 sw=2
 autocmd FileType makefile setlocal noet " make sure we use tabs
 "autocmd BufNewFile,BufRead *.sls set filetype=yaml
 
-autocmd FileType sls inoremap <buffer> <leader>jt {%  %}<Esc>hhi
-autocmd FileType sls inoremap <buffer> <leader>ji {{  }}<Esc>hhi
+autocmd FileType sls,jinja inoremap <buffer> <leader>jt {%  %}<Esc>hhi
+autocmd FileType sls,jinja inoremap <buffer> <leader>ji {{  }}<Esc>hhi
+autocmd FileType sls,jinja inoremap <buffer> <leader>jc {#  #}<Esc>hhi
 
 " airline options
 let g:airline#extensions#tabline#enabled = 1 " nice tablines
