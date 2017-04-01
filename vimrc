@@ -63,6 +63,9 @@ Plugin 'rdnetto/YCM-Generator'
 " fast html
 Plugin 'rstacruz/sparkup', {'rtp': 'vim'}
 
+" python indentation
+Plugin 'Vimjas/vim-python-pep8-indent'
+
 """ languages
 Plugin 'pangloss/vim-javascript'
 Plugin 'vim-ruby/vim-ruby'
