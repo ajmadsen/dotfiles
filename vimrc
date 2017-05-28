@@ -131,9 +131,7 @@ nnoremap # ?\<<C-R>=expand('<cword>')<CR>\><CR>
 
 " filetype-specific options
 "autocmd!
-autocmd FileType ruby setlocal ts=2 sts=2 sw=2
-autocmd FileType yaml setlocal ts=2 sts=2 sw=2
-autocmd FileType json setlocal ts=2 sts=2 sw=2
+autocmd FileType ruby,yaml,json,javascript setlocal ts=2 sts=2 sw=2
 autocmd FileType makefile setlocal noet " make sure we use tabs
 "autocmd BufNewFile,BufRead *.sls set filetype=yaml
 
@@ -184,3 +182,4 @@ map <leader>gf :GoFmt<CR>:GoImports<CR>
 map <leader>k :nohl<CR>
 map <leader>e :lopen<CR>
 map <leader>v :tabedit $MYVIMRC<CR>
+nnoremap <Leader>] :YcmCompleter GoTo<CR>
