@@ -89,9 +89,18 @@ Plugin 'altercation/vim-colors-solarized'
 call vundle#end()            " required
 filetype plugin indent on    " required
 
+" detect os
+if !exists("g:os")
+    if has("win64") || has("win32") || has("win16")
+        let g:os = "Windows"
+    else
+        let g:os = substitute(system('uname'), '\n', '', '')
+    endif
+endif
+
 " set look-and-feel
 if has('gui_running')
-    if has('gui_win32')
+    if g:os == 'Windows'
         set guifont=DejaVu\ Sans\ Mono\ for\ Powerline:h12
     endif
 
@@ -102,7 +111,7 @@ if has('gui_running')
 endif
 
 " windows-specific options
-if has('win32')
+if g:os == 'Windows'
     behave xterm
 endif
 
@@ -154,6 +163,9 @@ let g:UltiSnipsJumpBackwardTrigger = "<c-k>"
 
 " extra ycm options
 let g:ycm_global_ycm_extra_conf = '~/.ycm_extra_conf.py'
+if g:os == 'Darwin'
+    let g:ycm_rust_src_path = $HOME . '/.rustup/toolchains/stable-x86_64-apple-darwin/lib/rustlib/src/rust/src'
+endif
 
 " syntastic configuration
 set statusline+=%#warningmsg#
