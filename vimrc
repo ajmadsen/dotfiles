@@ -164,7 +164,7 @@ let g:UltiSnipsJumpBackwardTrigger = "<c-k>"
 " extra ycm options
 let g:ycm_global_ycm_extra_conf = '~/.ycm_extra_conf.py'
 if g:os == 'Darwin'
-    let g:ycm_rust_src_path = $HOME . '/.rustup/toolchains/stable-x86_64-apple-darwin/lib/rustlib/src/rust/src'
+    let g:ycm_rust_src_path = expand('~/.rustup/toolchains/stable-x86_64-apple-darwin/lib/rustlib/src/rust/src')
 endif
 
 " syntastic configuration
