@@ -66,6 +66,9 @@ Plugin 'rstacruz/sparkup', {'rtp': 'vim'}
 " python indentation
 Plugin 'Vimjas/vim-python-pep8-indent'
 
+" eclim
+Plugin 'dansomething/vim-eclim'
+
 """ languages
 Plugin 'pangloss/vim-javascript'
 Plugin 'vim-ruby/vim-ruby'
@@ -188,6 +191,7 @@ map <leader>tb :TagbarOpenAutoClose<CR>
 map <leader>gs :Gstatus<CR>
 map <leader>s :source $MYVIMRC<CR>
 map <leader>pi :source $MYVIMRC<CR>:PluginInstall<CR>
+map <leader>pu :PluginUpdate<CR>
 map <leader>gi :GoImport 
 map <leader>gr :GoRename 
 map <leader>gf :GoFmt<CR>:GoImports<CR>
