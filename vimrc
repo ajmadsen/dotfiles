@@ -81,6 +81,7 @@ Plugin 'othree/html5.vim'
 Plugin 'petRUShka/vim-opencl'
 Plugin 'saltstack/salt-vim'
 Plugin 'rust-lang/rust.vim'
+Plugin 'ElmCast/elm-vim'
 
 " show trailing whitespace
 Plugin 'bronson/vim-trailing-whitespace'
@@ -173,6 +174,10 @@ if g:os == 'Darwin'
     let g:ycm_rust_src_path = expand('~/.rustup/toolchains/stable-x86_64-apple-darwin/lib/rustlib/src/rust/src')
 endif
 
+let g:ycm_semantic_triggers = {
+     \ 'elm' : ['.'],
+     \}
+
 " syntastic configuration
 set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
@@ -182,6 +187,9 @@ let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
+
+" elm config
+let g:elm_syntastic_show_warnings = 1
 
 " vim commentary settings
 " autocmd FileType apache setlocal commentstring=#\ %s
