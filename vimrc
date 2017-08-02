@@ -35,6 +35,9 @@ Plugin 'tpope/vim-surround'
 " repeat arbitrary commands
 Plugin 'tpope/vim-repeat'
 
+" comment out stuff
+Plugin 'tpope/vim-commentary'
+
 " easier commenting
 Plugin 'scrooloose/nerdcommenter'
 
@@ -179,6 +182,9 @@ let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
+
+" vim commentary settings
+" autocmd FileType apache setlocal commentstring=#\ %s
 
 " allow modelines
 set modeline
