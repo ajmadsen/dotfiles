@@ -200,16 +200,16 @@ set modelines=5
 
 " key bindings
 let mapleader=','
-map <leader>f :NERDTreeFocus<CR>
+map <leader>nf :NERDTreeFocus<CR>
 map <leader>tb :TagbarOpenAutoClose<CR>
 map <leader>gs :Gstatus<CR>
-map <leader>s :source $MYVIMRC<CR>
+map <leader>vs :source $MYVIMRC<CR>
 map <leader>pi :source $MYVIMRC<CR>:PluginInstall<CR>
 map <leader>pu :PluginUpdate<CR>
 map <leader>gi :GoImport 
 map <leader>gr :GoRename 
 map <leader>gf :GoFmt<CR>:GoImports<CR>
-map <leader>k :nohl<CR>
-map <leader>e :lopen<CR>
-map <leader>v :tabedit $MYVIMRC<CR>
+map <leader>kh :nohl<CR>
+map <leader>fl :lopen<CR>
+map <leader>ve :tabedit $MYVIMRC<CR>
 nnoremap <Leader>] :YcmCompleter GoTo<CR>
